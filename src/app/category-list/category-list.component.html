@@ -1,0 +1,7 @@
+<app-navbar [title]="'list ' + code"></app-navbar>
+
+<mat-list role="list">
+  <mat-list-item role="listitem" *ngFor="let category of categories; let i = index">
+    <span class="index">{{i + 1}}.</span>&nbsp;{{ category }}
+  </mat-list-item>
+</mat-list>

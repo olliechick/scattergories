@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { getRandom } from "../utils";
 
 @Component({
@@ -13,13 +14,12 @@ export class GuestComponent {
 
   rows: string[][] = [];
 
-  constructor() {
+  constructor(private router: Router) {
     this.rows = this.letters.map(letter => this.numbers.map(number => `${letter}${number}`))
   }
 
   chooseCard(code: string) {
-    console.log(code);
-    // todo
+    this.router.navigate(['guest', code]);
   }
 
   chooseRandom() {

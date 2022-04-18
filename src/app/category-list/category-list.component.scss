@@ -1,0 +1,15 @@
+.index {
+  font-weight: bold;
+}
+
+.mat-list-base {
+  padding-top: 0;
+}
+
+.mat-list-item:nth-child(even){
+  background: #f0f2f9;
+}
+
+.mat-list-item:nth-child(odd){
+  background: white;
+}
