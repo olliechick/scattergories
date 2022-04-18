@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { interval, Subscription } from "rxjs";
+import { getRandom } from "../utils";
 
 @Component({
   selector: 'app-host',
@@ -22,7 +23,7 @@ export class HostComponent {
       this.seconds = this.totalSeconds;
       this.subscription?.unsubscribe();
     } else {
-      this.letter = this.possibleLetters[Math.floor(Math.random() * this.possibleLetters.length)]
+      this.letter = getRandom(this.possibleLetters)
       this.playAudioFile(`${this.letter.toLowerCase()}.mp3`)
       this.seconds = this.totalSeconds - 1;
       this.subscription = interval(1000)

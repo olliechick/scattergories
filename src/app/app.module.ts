@@ -10,13 +10,15 @@ import { HostComponent } from './host/host.component';
 import { MatCardModule } from "@angular/material/card";
 import { MatIconModule } from "@angular/material/icon";
 import { TimePipe } from "./host/time.pipe";
+import { GuestComponent } from './guest/guest.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     HostComponent,
-    TimePipe
+    TimePipe,
+    GuestComponent
   ],
   imports: [
     BrowserModule,

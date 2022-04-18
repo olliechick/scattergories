@@ -1,0 +1,18 @@
+<mat-toolbar>
+  <span class="nav-link" routerLink="">Scattergories</span>
+</mat-toolbar>
+
+<div class="board">
+  <div class="row">
+    <mat-card class="card" (click)="chooseRandom()">
+      <mat-card-title>Choose random</mat-card-title>
+    </mat-card>
+  </div>
+  <div class="row" *ngFor="let row of rows">
+    <ng-container *ngFor="let code of row">
+      <mat-card class="card" (click)="chooseCard(code)">
+        <mat-card-title>{{code}}</mat-card-title>
+      </mat-card>
+    </ng-container>
+  </div>
+</div>
