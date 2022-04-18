@@ -1,0 +1,19 @@
+<mat-toolbar>
+  <span class="nav-link" routerLink="">Scattergories</span>
+</mat-toolbar>
+
+<div class="wrapper">
+  <mat-card class="big-letter">
+    <span *ngIf="letter">{{ letter }}</span>
+    <span *ngIf="!letter" class="hidden">A</span>
+  </mat-card>
+  <div class="right-wrapper">
+    <mat-card class="countdown">
+      <span *ngIf="seconds > 0">{{ seconds | time }}</span>
+      <span *ngIf="seconds <= 0">Stop</span>
+    </mat-card>
+    <button mat-fab id="play-pause-button" (click)="playStop()">
+      <mat-icon>{{ letter && seconds > 0 ? 'stop' : 'play_arrow' }}</mat-icon>
+    </button>
+  </div>
+</div>

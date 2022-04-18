@@ -1,0 +1,51 @@
+.nav-link {
+  cursor: pointer;
+}
+
+mat-card {
+  border-radius: 10px;
+}
+
+#play-pause-button {
+  transform: scale(2);
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.wrapper {
+  margin: 24px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 24px;
+}
+
+.big-letter {
+  font-size: 30em;
+  font-weight: bold;
+  font-family: monospace;
+  background: #eceef8;
+  text-align: center;
+  height: 100%;
+  width: 500px;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.right-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 12px;
+}
+
+.countdown {
+  font-size: 10em;
+  text-align: center;
+  font-family: monospace;
+  width: 350px;
+}
