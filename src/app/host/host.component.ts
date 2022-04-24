@@ -34,7 +34,6 @@ export class HostComponent {
               this.playAudioFile('one-minute-remaining.mp3');
               break;
             case 10:
-            case 5:
             case 3:
             case 2:
             case 1:
