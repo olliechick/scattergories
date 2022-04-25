@@ -17,6 +17,8 @@ import { MatListModule } from "@angular/material/list";
 import { HttpClientModule } from "@angular/common/http";
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { HelpComponent } from './help/help.component';
+import { MatDialogModule } from "@angular/material/dialog";
 
 @NgModule({
   declarations: [
@@ -26,7 +28,8 @@ import { environment } from '../environments/environment';
     TimePipe,
     GuestComponent,
     CategoryListComponent,
-    NavbarComponent
+    NavbarComponent,
+    HelpComponent
   ],
   imports: [
     BrowserModule,
@@ -36,6 +39,7 @@ import { environment } from '../environments/environment';
     MatToolbarModule,
     MatButtonModule,
     MatCardModule,
+    MatDialogModule,
     MatIconModule,
     MatListModule,
     ServiceWorkerModule.register('ngsw-worker.js', {
